@@ -15,7 +15,7 @@ app = Flask(__name__.split('.')[0])
 @app.route('/')
 @app.route('/')
 def index():
-  return render_template('CatWalk.html')
+  return render_template('index.html')
 
 @app.route('/catwalk')
 def catwalk():
