@@ -70,24 +70,18 @@ function libIt() {
       adjective: ""
       })
   
-  /*
-  if(localStorage.pharse)
+   var a =[];
+  if(localStorage.lib)
   {
-  var storedData = JSON.parse(localStorage.pharse);
-    // add to it,
-    storedData.push({phrase: text});
-    // then put it back.
-    localStorage.setItem('storedData', JSON.stringify(storedData));
+    a = JSON.parse(localStorage.getItem('lib'));
+    a.push(text);
+    localStorage.setItem('lib', JSON.stringify(a));
   }
   else
   {
-  */
-    localStorage.pharse=JSON.stringify(
-      {
-      pharse: text
-      })
-    
-  //}
+      a.push(text);
+      localStorage.setItem('lib', JSON.stringify(a));
+  }
 }
 
 
